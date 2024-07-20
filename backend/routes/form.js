@@ -99,7 +99,7 @@ router.delete('/delete/:id', fetchuser, async (req, res) => {
     }
 });
 
-router.get('/getCreators', fetchuser, async (req, res) => {
+router.get('/getCreators', async (req, res) => {
     try {
         const { page = 1, limit = 10 } = req.query;
 
@@ -125,7 +125,7 @@ router.get('/getCreators', fetchuser, async (req, res) => {
  
 
 // Route 6: Get all form data where type = 'business' using : GET "/api/form/getBusiness". Login required
-router.get('/getBusiness', fetchuser, async (req, res) => {
+router.get('/getBusiness', async (req, res) => {
     try {
         const { page = 1, limit = 10 } = req.query;
         const forms = await FormData.find({ type: 'business' })
