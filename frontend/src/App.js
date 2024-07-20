@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/MainSectionComponents/Header';
 import Main from './components/Main';
 import Footer from './components/MainSectionComponents/Footer';
@@ -42,6 +42,7 @@ function App() {
           <Route path="/businesses" element={<BusinessDetails showAlert={showAlert} />} />
           <Route path="/creators" element={<CreatorDetails showAlert={showAlert} />} />
           <Route path="/about" element={<About showAlert={showAlert} />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

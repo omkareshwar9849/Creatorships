@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Creatorships/static/css/main.b24a1532.css",
+    "main.js": "/Creatorships/static/js/main.f30285ce.js",
+    "index.html": "/Creatorships/index.html",
+    "main.b24a1532.css.map": "/Creatorships/static/css/main.b24a1532.css.map",
+    "main.f30285ce.js.map": "/Creatorships/static/js/main.f30285ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b24a1532.css",
+    "static/js/main.f30285ce.js"
+  ]
+}
