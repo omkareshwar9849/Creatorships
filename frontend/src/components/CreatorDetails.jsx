@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const CreatorDetails = () => {
@@ -6,9 +7,15 @@ const CreatorDetails = () => {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const host = process.env.REACT_APP_BACKEND_HOST;
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetchCreators(1);
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate('/signin');
+    } else {
+      fetchCreators(1);
+    }
     // eslint-disable-next-line
   }, []);
 

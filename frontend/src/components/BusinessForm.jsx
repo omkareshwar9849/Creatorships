@@ -20,6 +20,10 @@ const BusinessForm = (props) => {
   const host = process.env.REACT_APP_BACKEND_HOST;
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate('/signin');
+    }
     const userType = localStorage.getItem("type");
     if (userType !== "business") {
       navigate("/submit-creator");

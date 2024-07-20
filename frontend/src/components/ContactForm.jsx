@@ -3,12 +3,12 @@ import React from 'react';
 const ContactForm = () => {
   return (
     <main className="flex-1">
-      <section className="w-full py-12 md:py-4 lg:py-4 xl:py-4">
-        <div className="container px-4 md:px-6">
+      <section className="w-full py-12 md:py-4 lg:py-4 xl:py-4 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Get in Touch</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl">Get in Touch</h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   Have a question or want to learn more about our services? Fill out the form below and we'll get back
                   to you as soon as possible.

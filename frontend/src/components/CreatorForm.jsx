@@ -20,11 +20,15 @@ const CreatorForm = (props) => {
   const host = process.env.REACT_APP_BACKEND_HOST;
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
     const userType = localStorage.getItem("type");
+    if (!token) {
+      navigate('/signin');
+    }else
     if (userType !== "creator") {
       navigate("/submit-business");
       return;
-    }
+    }else{
 
     const fetchUserData = async () => {
       try {
@@ -67,7 +71,7 @@ const CreatorForm = (props) => {
     };
 
     fetchUserData();
-    fetchFormData();
+    fetchFormData();}
   }, [host, navigate]);
 
   const handleChange = (e) => {

@@ -11,6 +11,7 @@ import ContactForm from './components/ContactForm';
 import CreatorForm from './components/CreatorForm';
 import BusinessDetails from './components/BusinessDetails';
 import CreatorDetails from './components/CreatorDetails';
+import About from './components/About';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contact" element={<ContactForm showAlert={showAlert} />} />
           <Route path="/businesses" element={<BusinessDetails showAlert={showAlert} />} />
           <Route path="/creators" element={<CreatorDetails showAlert={showAlert} />} />
+          <Route path="/about" element={<About showAlert={showAlert} />} />
         </Routes>
         <Footer />
       </div>

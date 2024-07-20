@@ -93,6 +93,7 @@ const MainContent = () => {
       <Section
         title="Featured Creators"
         description="Check out some of the creators that have joined Creatorships."
+        backgroundImage="https://i.ibb.co/CBdFTBj/ff.jpg"
       >
         {creators.map((creator, index) => (
           <Card

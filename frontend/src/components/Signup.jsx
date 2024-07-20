@@ -41,19 +41,16 @@ const Signup = (props) => {
   }
 
   return (
-    <div className="flex min-h-[100dvh] bg-background">
+    <div className="flex min-h-[100dvh] bg-background pb-8 pt-2">
       <div className="flex-1 flex items-center justify-center">
         <div className="w-full max-w-md">
-          <div className="relative h-[400px] overflow-hidden rounded-lg">
+          <div className="relative h-[500px] overflow-hidden rounded-lg">
             <div className="absolute inset-0 flex items-center justify-center">
-              <svg
-                className="h-[300px] w-[300px] animate-spin-slow fill-primary"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 90C32.4 90 10 67.6 10 50S32.4 10 50 10s40 22.4 40 40-22.4 40-40 40z"></path>
-                <path d="M50 0v10c22.1 0 40 17.9 40 40h10C100 22.4 77.6 0 50 0z"></path>
-              </svg>
+              <img
+                className="h-full w-full rounded-lg object-cover"
+                src="https://i.ibb.co/fFhjy4x/mm.jpg"
+                alt="side"
+              />
             </div>
           </div>
         </div>
