@@ -34,6 +34,7 @@ function App() {
         <Alert alert={alert} />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/Creatorships" element={<Main />} />
           <Route path="/signin" element={<Signin showAlert={showAlert} />} />
           <Route path="/signup" element={<Signup showAlert={showAlert} />} />
           <Route path="/submit-business" element={<BusinessForm showAlert={showAlert} />} />
